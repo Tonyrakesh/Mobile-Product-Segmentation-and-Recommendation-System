@@ -9,14 +9,14 @@ from sklearn.decomposition import PCA
 from sklearn.preprocessing import StandardScaler, MinMaxScaler
 from sklearn.metrics.pairwise import cosine_similarity
 
-# 1. PAGE SETUP
+# PAGE SETUP
 
 st.set_page_config(
     page_title="Mobile Segmentation",
     layout="wide"
 )
 
-# 2. DATA CLEANING & PREPROCESSING
+# DATA CLEANING & PREPROCESSING
 
 @st.cache_data
 def load_and_preprocess_data():
@@ -88,7 +88,7 @@ def load_and_preprocess_data():
 
 df, catalog, sim_df = load_and_preprocess_data()
 
-# 3. SIDEBAR NAVIGATION
+# SIDEBAR NAVIGATION
 
 st.sidebar.title("Navigate Pipeline")
 #st.sidebar.markdown("Mobile Segmentation & Recommendation System")
